@@ -1,0 +1,29 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+
+  --bar-button-color: #1992d4;
+  --main-bg-accent-color: #ffffff;
+  --main-content-bg-color: #e2e8f0;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: var(--bar-button-color);
+    grid-row: 1 / 3;
+}
+
+.header {
+    background-color: var(--main-bg-accent-color);
+}
+
+.main-content {
+    background-color: var(--main-content-bg-color);
+}
