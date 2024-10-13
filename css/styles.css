@@ -68,8 +68,9 @@ html {
 
     /* sidebar grid */
     display: grid;
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-rows: 1fr 3fr 3fr 2fr;
 
+    gap: 20px;
     font-family: 'robotobold';
     font-size: 18px;
 }
@@ -93,11 +94,22 @@ html {
     height: 3rem;
 }
 
-.sidebar > div > div > svg {
+.sidebar > div > div > svg,
+.sidebar > div > a > svg {
     justify-self: center;
     fill: var(--main-bg-accent-color);
     width: 1.5rem;
     height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+    opacity: 50%;
 }
 
 /* Header Styling */
@@ -115,9 +127,10 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 1em;
 }
 
-button {
+.modify-buttons > button {
     font-size: 16px;
     font-family: 'robotobold';
 
@@ -125,12 +138,16 @@ button {
     background-color: var(--bar-button-color);
 
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
 
-    padding: 10px 30px;
+    padding: 8px 30px;
     cursor: pointer;
 
     box-shadow: 0px 1px 2px #dddedf;
+}
+
+button:hover {
+    opacity: 50%;
 }
 
 .main-content {
