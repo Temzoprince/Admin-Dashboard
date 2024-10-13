@@ -145,6 +145,25 @@ a:hover {
     padding: 8px 10px;
 }
 
+.notifications {
+    margin-right: 50px;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.notifications > svg {
+    width: 24px;
+    height: 24px;
+}
+
+.notifications > img {
+    width: 40px;
+    height: 40px;
+}
+
 .welcome-user {
     margin-left: 50px;
     grid-column: 1 / 2;
@@ -180,8 +199,9 @@ a:hover {
     grid-row: 2;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 1em;
+    justify-content: space-between;
+    padding: 1em 0 1em 1em;
+    margin-right: 50px;
 }
 
 .modify-buttons > button {
@@ -194,7 +214,7 @@ a:hover {
     border: none;
     border-radius: 20px;
 
-    padding: 8px 30px;
+    padding: 8px 27px;
     cursor: pointer;
 
     box-shadow: 0px 1px 2px #dddedf;
