@@ -123,12 +123,34 @@ a:hover {
     font-family: 'robotobold';
 }
 
+.search {
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 0.5fr 9fr;
+    place-items: center start;
+}
+
+.search > svg {
+    width: 24px;
+    height: 24px;
+}
+
+.search > input {
+    width: 95%;
+
+    background-color: var(--main-content-bg-color);
+    border: none;
+    border-radius: 20px;
+
+    padding: 8px 10px;
+}
+
 .welcome-user {
-    margin-left: 20px;
+    margin-left: 50px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 7fr;
     grid-template-rows: 1fr 1.5fr;
 }
 
@@ -136,7 +158,7 @@ a:hover {
     width: 75px;
     height: 75px;
     grid-row: 1 / span 2;
-    place-self: center end;
+    place-self: center start;
     padding-right: 20px;
 }
 
